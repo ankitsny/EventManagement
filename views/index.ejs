@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="/libs/angular/angular.min.js"></script>
-  </head>
-  <body>
-    <p>Welcome to </p>
-  </body>
+<html ng-app="innovify">
+  	<head>
+	  	<base href="/" target="">
+    	<title></title>
+    	<link rel='stylesheet' href='/stylesheets/style.css' />
+    	
+		
+		<script src="/libs/angular/angular.min.js"></script>
+    	<script src="/libs/angular-route/angular-route.min.js"></script>
+		
+		<script src="/app.modules.js"></script>
+    	<script src="/app.js"></script>
+		
+  	</head>
+  	<body>
+    	
+		<div ng-view></div>
+		<footer>
+			
+		</footer>
+  	</body>
 </html>
