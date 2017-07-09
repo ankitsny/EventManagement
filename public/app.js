@@ -2,7 +2,8 @@ var app = angular.module('innovify', [
     'ngRoute',
     'app.controllers',
     'app.services',
-    'app.directives'
+    'app.directives',
+    'ui.bootstrap'
 ]);
 
 app.config(['$routeProvider', '$locationProvider',
@@ -14,7 +15,7 @@ app.config(['$routeProvider', '$locationProvider',
         $routeProvider
 
             .when('/', {
-                template: '<h1>Hello World</h1>'
+                template: '<h1 uib-tooltip="heah">Hello World</h1>'
             })
     }
 ]);
