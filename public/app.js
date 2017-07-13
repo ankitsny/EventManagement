@@ -15,7 +15,8 @@ app.config(['$routeProvider', '$locationProvider',
         $routeProvider
 
             .when('/', {
-                template: '<h1 uib-tooltip="heah">Hello World</h1>'
+                templateUrl: 'views/login.html',
+                controller: 'LoginController'
             })
     }
 ]);

@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html ng-app="innovify">
-  	<head>
-	  	<base href="/" target="">
-    	<title></title>
-    	<link rel='stylesheet' href='/stylesheets/style.css' />
-		
-		<link rel="stylesheet" type="" href="/libs/bootstrap/dist/css/bootstrap.min.css">
-		
-		<script src="/libs/angular/angular.min.js"></script>
-    	<script src="/libs/angular-route/angular-route.min.js"></script>
-    	<script src="/libs/angular-animate/angular-animate.min.js"></script>
-    	<script src="/libs/angular-bootstrap/ui-bootstrap.min.js"></script>
-		<script src="/libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-		
 
-		
-		
-		<script src="/app.modules.js"></script>
-    	<script src="/app.js"></script>
-		
-  	</head>
-  	<body>
-    	
-		<div ng-view></div>
-		<footer>
-			
-		</footer>
-  	</body>
+<head>
+	<base href="/" target="">
+	<title></title>
+
+	<link rel="stylesheet" type="" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+
+	<script src="/bundle.min.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">demo</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="121">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">login</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+	<div ng-view>
+
+	</div>
+	<footer>
+
+	</footer>
+</body>
+
+<style>
+	body {
+		background-color: #fafafa;
+	}
+
+	.navbar-default {
+		background-color: #009688;
+		border-radius: 0;
+		color: #fafafa;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+		border-color: #009688;
+	}
+
+	.navbar-brand {
+		color: #fafafa !important;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: #fafafa;
+	}
+</style>
+
 </html>
