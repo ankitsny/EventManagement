@@ -11,6 +11,7 @@ module.exports = function (grunt) {
                     './public/libs/angular-animate/angular-animate.min.js',
                     './public/libs/angular-bootstrap/ui-bootstrap.min.js',
                     './public/libs/angular-bootstrap/ui-bootstrap-tpls.min.js',
+                    './public/libs/angular-toastr/dist/angular-toastr.tpls.min.js',
                     './public/{app.modules,app}.js',
                     './public/{services,controllers,directive}/*.js'
                 ],

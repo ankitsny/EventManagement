@@ -3,7 +3,9 @@ var app = angular.module('innovify', [
     'app.controllers',
     'app.services',
     'app.directives',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ngAnimate',
+    'toastr'
 ]);
 
 app.config(['$routeProvider', '$locationProvider',
@@ -17,6 +19,15 @@ app.config(['$routeProvider', '$locationProvider',
             .when('/', {
                 templateUrl: 'views/login.html',
                 controller: 'LoginController'
+            })
+
+            .when('/login', {
+                templateUrl: 'views/login.html',
+                controller: 'LoginController'
+            })
+
+            .when('/signup', {
+                templateUrl: 'views/signup.html'
             })
     }
 ]);
